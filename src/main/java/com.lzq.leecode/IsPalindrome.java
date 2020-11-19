@@ -1,6 +1,8 @@
 package com.lzq.leecode;
 
 /**
+ * LeeCode
+ *
  * 9、判断是否为回文子串
  */
 public class IsPalindrome {
