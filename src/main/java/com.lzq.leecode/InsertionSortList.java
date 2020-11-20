@@ -4,6 +4,8 @@ package com.lzq.leecode;
  * LeeCode
  *
  * 147. 对链表进行插入排序
+ *
+ * 解法一：插入元素时，直接从头节点遍历
  */
 public class InsertionSortList {
 
@@ -29,7 +31,8 @@ public class InsertionSortList {
         node8.next = node9;
         node9.next = node10;
 
-        InsertionSortList test = new InsertionSortList();
+//        InsertionSortList test = new InsertionSortList();
+        InsertionSortList2 test = new InsertionSortList2();
         test.insertionSortList(node1);
         System.out.println(node1);
 
