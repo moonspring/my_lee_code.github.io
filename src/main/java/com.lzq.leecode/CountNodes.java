@@ -7,6 +7,8 @@ package com.lzq.leecode;
  */
 public class CountNodes {
 
+
+
     private int count = 0;
 
     public int countNodes(TreeNode root) {
