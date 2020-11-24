@@ -12,6 +12,7 @@ import java.util.stream.Collectors;
 public class LongestPalindrome4092 {
 
 
+
     public int longestPalindrome(String s) {
 
         /* 每个字符，转ASCII码 */
