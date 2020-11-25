@@ -19,7 +19,9 @@ public class SortByBits {
 
     public int[] sortByBits(int[] arr) {
 
-        if (arr==null) return null;
+        if (arr==null) {
+            return null;
+        }
         int size = arr.length;
         int[] arr1Size = new int[size];
         for (int i = 0; i < size; i++) {

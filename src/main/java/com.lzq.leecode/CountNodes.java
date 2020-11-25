@@ -4,11 +4,12 @@ package com.lzq.leecode;
  * LeeCode
  *
  * 222. 完全二叉树的节点个数
+ *
+ * 解法一：先序遍历 递归
  */
 public class CountNodes {
 
     private int count = 0;
-
     public int countNodes(TreeNode root) {
 
         if (root!=null){
@@ -16,7 +17,6 @@ public class CountNodes {
             countNodes(root.left);
             countNodes(root.right);
         }
-
         return count;
     }
 

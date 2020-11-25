@@ -11,13 +11,13 @@ public class LengthOfLIS {
     public static void main(String[] args) {
 
         int[] nums = {1,2,43,3,6};
-        int result = lengthOfLIS2(nums);
+        int result = lengthoflis2(nums);
 
         System.out.println(result);
 
     }
 
-    public static int lengthOfLIS2(int[] nums){
+    public static int lengthoflis2(int[] nums){
 
         if (nums==null || nums.length==0) {return 0; }
 

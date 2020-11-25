@@ -5,13 +5,13 @@ package com.lzq.leecode;
  */
 public class String2Integer {
 
-    private static final int max = Integer.MAX_VALUE / 10;
+    private static final int MAX = Integer.MAX_VALUE / 10;
 
     /* 0 1 2 3 4 5 6 7 8 9 */
-    private static final int maxLeft = Integer.MAX_VALUE % 10;
+    private static final int MAX_LEFT = Integer.MAX_VALUE % 10;
 
-    private static final int min = Integer.MIN_VALUE / 10;
-    private static final int minLeft = Integer.MIN_VALUE % 10;
+    private static final int MIN = Integer.MIN_VALUE / 10;
+    private static final int MIN_LEFT = Integer.MIN_VALUE % 10;
 
 
     public static void main(String[] args) {
@@ -68,10 +68,10 @@ public class String2Integer {
             }
 
             // 题目中说：环境只能存储 32 位大小的有符号整数，因此，需要提前判：断乘以 10 以后是否越界
-            if (res > max || (res == max && (currChar - '0') > maxLeft)) {
+            if (res > MAX || (res == MAX && (currChar - '0') > MAX_LEFT)) {
                 return Integer.MAX_VALUE;
             }
-            if (res < min || (res == min && (currChar - '0') > -(minLeft))) {
+            if (res < MIN || (res == MIN && (currChar - '0') > -(MIN_LEFT))) {
                 return Integer.MIN_VALUE;
             }
 

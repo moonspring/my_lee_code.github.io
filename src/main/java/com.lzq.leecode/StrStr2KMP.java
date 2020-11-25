@@ -19,10 +19,10 @@ public class StrStr2KMP {
 
 
     public static int strStr(String haystack, String needle) {
-        if(needle.equals("")) {
+        if("".equals(needle)) {
             return 0;
         }
-        if(haystack.equals("")) {
+        if("".equals(haystack)) {
             return -1;
         }
 

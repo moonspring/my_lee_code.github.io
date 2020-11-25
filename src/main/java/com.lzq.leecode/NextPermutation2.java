@@ -11,19 +11,27 @@ import java.util.Arrays;
 public class NextPermutation2 {
 
     public void nextPermutation(int[] nums) {
-        if(nums==null || nums.length<2) return;
+        if(nums==null || nums.length<2) {
+            return;
+        }
         boolean flag=false;
         for(int i=nums.length-2;i>=0;--i){
-            if(nums[i]>=nums[i+1]) continue;
+            if(nums[i]>=nums[i+1]) {
+                continue;
+            }
             flag=true;
             int j=nums.length-1;
-            while(nums[j]<=nums[i]) j--;
+            while(nums[j]<=nums[i]) {
+                j--;
+            }
             int temp=nums[i];
             nums[i]=nums[j];
             nums[j]=temp;
             Arrays.sort(nums,i+1,nums.length);
             break;
         }
-        if(!flag) Arrays.sort(nums);
+        if(!flag) {
+            Arrays.sort(nums);
+        }
     }
 }

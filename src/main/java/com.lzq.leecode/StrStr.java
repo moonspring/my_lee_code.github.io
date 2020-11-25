@@ -22,7 +22,7 @@ public class StrStr {
     }
 
     public static int strStr(String haystack, String needle) {
-        if (needle==null || needle.equals("") || haystack==null){
+        if (needle==null || "".equals(needle) || haystack==null){
             return 0;
         }
         return haystack.indexOf(needle);
