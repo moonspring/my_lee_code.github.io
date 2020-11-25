@@ -7,15 +7,16 @@ import java.util.Arrays;
  * LeeCode
  *
  * 1370. 上升下降字符串
+ * 解法一：变量控制
  */
 public class SortString {
 
 
     public static void main(String[] args) {
-        SortString sortString = new SortString();
-//        String s = sortString.sortString("aaaabbbbcccc");
+        SortString2 sortString = new SortString2();
+        String s = sortString.sortString("aaaabbbbcccc");
 //        String s = sortString.sortString("rat");
-        String s = sortString.sortString("leetcode");
+//        String s = sortString.sortString("leetcode");
         System.out.println(s);
     }
 
