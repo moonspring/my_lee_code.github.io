@@ -7,6 +7,8 @@ import java.util.Arrays;
  *
  * 164. 最大间距
  *
+ * 解答：应该使用基数排序和桶排序，本题解虽然能过，但是不符合要求
+ *
  * @author lzq
  */
 public class MaximumGap {
@@ -19,14 +21,14 @@ public class MaximumGap {
         int max = 0;
 
         int len = nums.length;
-        int left;
-        int right;
-        for (int i = 0; i < len-1; i++) {
-            left = nums[i];
-            right = nums[i+1];
-            max = Math.max(max,right-left);
-        }
 
+        int currentDiff;
+        for (int i = 0; i < len-1; i++) {
+            currentDiff = nums[i+1]-nums[i];
+            if (currentDiff>max){
+                max = currentDiff;
+            }
+        }
         return max;
     }
 
