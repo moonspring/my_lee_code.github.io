@@ -11,7 +11,9 @@ public class MaxProfit121 {
     public static void main(String[] args) {
 
         int[] prices = {7,6,4,3,1};
-        MaxProfit121 maxProfit = new MaxProfit121();
+//        MaxProfit121 maxProfit = new MaxProfit121();
+        MaxProfit121_2 maxProfit = new MaxProfit121_2();
+
         int res = maxProfit.maxProfit(prices);
         System.out.println(res);
     }
