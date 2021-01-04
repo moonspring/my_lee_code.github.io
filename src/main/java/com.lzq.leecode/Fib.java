@@ -8,8 +8,6 @@ package com.lzq.leecode;
  */
 public class Fib {
 
-    int[] result = new int[31];
-
     public int fib(int n) {
 
         if (n==0){ return 0;}
