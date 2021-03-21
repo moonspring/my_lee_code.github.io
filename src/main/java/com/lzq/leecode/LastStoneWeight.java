@@ -15,6 +15,8 @@ public class LastStoneWeight {
 
         PriorityQueue<Integer> queue = new PriorityQueue<>((a,b)->b-a);
 
+
+
         for (int item: stones) {
             queue.offer(item);
         }

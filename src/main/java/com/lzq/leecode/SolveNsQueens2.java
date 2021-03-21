@@ -41,6 +41,9 @@ public class SolveNsQueens2 {
             List<String> board = generateBoard(queens, n);
             solutions.add(board);
         } else {
+
+            /** ～非运算：1变0；0变1
+             *  ｜或运算：两个位只要有一个为1，那么结果就是1，否则就为0 */
             int availablePositions = ((1 << n) - 1) & (~(columns | diagonals1 | diagonals2));
 
             while (availablePositions != 0) {

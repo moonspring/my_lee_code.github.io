@@ -26,13 +26,16 @@ public class Candy {
         Arrays.fill(right,1);
 
         for (int i = 1; i < size; i++) {
-            if (ratings[i]>ratings[i-1]){left[i] = left[i-1]+1;}
+            if (ratings[i]>ratings[i-1]){
+                left[i] = left[i-1]+1;
+            }
         }
 
         int count = left[size-1];
         for (int i = size-2; i >= 0; i--) {
-            if (ratings[i]>ratings[i+1]){right[i] = right[i+1]+1;}
-
+            if (ratings[i]>ratings[i+1]){
+                right[i] = right[i+1]+1;
+            }
             count += Math.max(left[i],right[i]);
         }
         return count;
