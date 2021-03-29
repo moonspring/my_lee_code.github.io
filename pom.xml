@@ -7,6 +7,16 @@
     <groupId>org.lzq</groupId>
     <artifactId>my_lee_code.github.io</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.10</version>
+        </dependency>
+
+    </dependencies>
+
     <build>
         <plugins>
             <plugin>

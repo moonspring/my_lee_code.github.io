@@ -14,9 +14,6 @@ public class ArrayInOrder {
 
     public static void main(String[] args) {
 
-
-
-
     }
 
 
